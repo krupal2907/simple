@@ -29,5 +29,7 @@ echo "exit 0" >> rc.local
 
 cd /home/debian
 
-echo "print ('Welcome to Odinub')" >> welcome.py
-
+> welcome.py
+echo "import os, sys" >> welcome.py
+echo "os.system("ifup wlan0")" >> welcome.py
+echo "print("wifi ready") " >> welcome.py
