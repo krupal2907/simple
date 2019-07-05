@@ -31,5 +31,6 @@ cd /home/debian
 
 > welcome.py
 echo "import os, sys" >> welcome.py
-echo "os.system("ifup wlan0")" >> welcome.py
-echo "print("wifi ready") " >> welcome.py
+echo "print('Welcome Python') " >> welcome.py
+echo "os.system('ifup wlan0')" >> welcome.py
+echo "print('wifi ready') " >> welcome.py
