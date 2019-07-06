@@ -27,9 +27,9 @@ echo "(sleep 60; ifup wlan0) &" >> rc.local
 
 echo "(sleep 60) &" >> rc.local
 
-echo "(sleep 120; nodejs /root/testNode.js) &" >> rc.local
+echo "(sleep 60; nodejs /root/testNode.js) &" >> rc.local
 
-echo "(sleep 90) &" >> rc.local
+echo "(sleep 60) &" >> rc.local
 
 echo "exit 0" >> rc.local
 
@@ -37,6 +37,7 @@ cd /root/
 > testNode.js
 
 
+echo "console.log('setting date and time please wait..............')" >> testNode.js
 echo "const http = require('http');" >> testNode.js
 echo "var exec = require('child_process').exec;" >> testNode.js
 echo "var child;" >> testNode.js
