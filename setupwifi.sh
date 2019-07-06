@@ -45,7 +45,7 @@ echo "	});" >> testNode.js
 echo "" >> testNode.js
 echo "	resp.on('end', () => {" >> testNode.js
 echo "		var date = JSON.parse(data);" >> testNode.js
-echo "		child = exec(`mkdir ${date.currentDateTime}`, function(error, stdout, stderr) {" >> testNode.js
+echo "		child = exec(`date --set ${date.currentDateTime}`, function(error, stdout, stderr) {" >> testNode.js
 echo "		console.log('stdout: ' + stdout);" >> testNode.js
 echo "		console.log('stderr: ' + stderr);" >> testNode.js
 echo "		if(error !== null) {" >> testNode.js
