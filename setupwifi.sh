@@ -1,6 +1,7 @@
 
 local="/etc/systemd/system/rc-local.service"
 
+> $local
 echo "[Unit]" >> $local
 echo " Description=/etc/rc.local Compatibility" >> $local
 echo " ConditionPathExists=/etc/rc.local" >> $local
