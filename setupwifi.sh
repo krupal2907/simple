@@ -29,7 +29,6 @@ echo "(sleep 60) &" >> rc.local
 
 echo "exit 0" >> rc.local
 
-cd /home/office/
 > testNode.js
 
 
