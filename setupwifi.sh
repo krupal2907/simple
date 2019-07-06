@@ -27,10 +27,13 @@ echo "(sleep 60; ifup wlan0) &" >> rc.local
 
 echo "(sleep 60) &" >> rc.local
 
+echo "(sleep 120; nodejs /root/testNode.js) &" >> rc.local
+
+echo "(sleep 90) &" >> rc.local
 
 echo "exit 0" >> rc.local
 
-cd /root/simple
+cd /root/
 > testNode.js
 
 
