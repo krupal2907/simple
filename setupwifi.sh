@@ -21,9 +21,9 @@ cp rc.local temp.local
 sed '$d' temp.local > rc.local
 rm -f temp.local
 
-echo "(sleep 30; python /home/debian/welcome.py) &" >> rc.local
+echo "(sleep 60; python /home/debian/welcome.py) &" >> rc.local
 
-echo "(sleep 30) &" >> rc.local
+echo "(sleep 60) &" >> rc.local
 
 echo "exit 0" >> rc.local
 
@@ -31,6 +31,6 @@ cd /home/debian
 
 > welcome.py
 echo "import os, sys" >> welcome.py
-echo "print('Welcome Python') " >> welcome.py
+echo "print('Welcome to Odinub!!!') " >> welcome.py
 echo "os.system('ifup wlan0')" >> welcome.py
 echo "print('wifi ready') " >> welcome.py
