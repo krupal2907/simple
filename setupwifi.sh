@@ -39,7 +39,7 @@ echo "var exec = require('child_process').exec;" >> testNode.js
 echo "var child;" >> testNode.js
 echo "" >> testNode.js
 echo "http.get('http://worldclockapi.com/api/json/utc/now', resp => {" >> testNode.js
-echo "	let data = '';" >> testNode.js
+echo "	var data = '';" >> testNode.js
 echo "	resp.on('data', chunk => {" >> testNode.js
 echo "		data += chunk;" >> testNode.js
 echo "	});" >> testNode.js
